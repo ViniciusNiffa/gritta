@@ -1,0 +1,64 @@
+#cabecalho {
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;  
+    gap: 100px;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+#navMenu a {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 0;
+}
+#navMenu a:hover{
+    text-decoration: underline;
+}
+#logo{
+    width: 100px;
+    height: 80px;
+}
+#logo a img{
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+#logo a img:hover{
+    transform: scale(1.1);
+}
+
+#usuario{
+    display: flex;
+    text-align: right;
+    gap: 30px;
+}
+#usuario a{
+    align-items: center;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+#usuario a img{
+    width: 40px;
+    height: auto;
+}
+#usuario a:hover{
+    transform: scale(1.1);
+}
+#active{
+    text-decoration: underline;
+}
