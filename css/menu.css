@@ -1,5 +1,5 @@
 #cabecalho {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -20,13 +20,13 @@
 }
 
 #navMenu a {
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding: 0;
 }
 #navMenu a:hover{
-    text-decoration: underline;
+    color: #055214;
 }
 #logo{
     width: 100px;
@@ -60,5 +60,5 @@
     transform: scale(1.1);
 }
 #active{
-    text-decoration: underline;
+    color: #055214 !important;
 }
