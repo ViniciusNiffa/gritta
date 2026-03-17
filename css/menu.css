@@ -3,7 +3,7 @@
     display: flex;
     margin: 0 auto;
     width: 100%;
-    height: 50px;  
+    height: 50px;
     gap: 100px;
     padding: 20px;
     border-bottom: 1px solid black;
@@ -23,43 +23,76 @@
     color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    padding: 0;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 1px;
+    transition: all 0.3s ease;
 }
-#navMenu a:hover{
-    text-decoration: underline;
+
+#navMenu a:hover {
+    color: #055214;
 }
-#logo{
+
+
+#navMenu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #055214;
+    transition: width 0.3s ease-in;
+}
+
+
+#navMenu a:hover::after {
+    width: 100%;
+}
+
+
+#active {
+    color: #055214 !important;
+}
+
+#navMenu a#active::after {
+    background-color: #055214;
+    width: 100%;
+}
+
+#logo {
 
     width: 100px;
     height: 50px;
 }
-#logo a img{
+
+#logo a img {
     display: flex;
     width: 100%;
     transition: transform 0.5s ease;
 }
 
-#logo a img:hover{
+#logo a img:hover {
     transform: scale(1.1);
 }
 
-#usuario{
+#usuario {
     display: flex;
     text-align: right;
     gap: 30px;
 }
-#usuario a{
+
+#usuario a {
     align-items: center;
     display: flex;
     transition: transform 0.5s ease;
 }
-#usuario a img{
+
+#usuario a img {
     width: 40px;
     height: auto;
 }
-#usuario a:hover{
+
+#usuario a:hover {
     transform: scale(1.1);
-}
-#active{
-    color: #055214 !important;
 }
