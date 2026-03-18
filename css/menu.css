@@ -5,24 +5,24 @@
     width: 100%;
     height: 50px;
     gap: 100px;
-    padding: 20px;
-    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #navMenu {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     align-items: center;
-    gap: 100px;
+    gap: 75px;
     justify-content: center;
 }
 
 #navMenu a {
     color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     position: relative;
     padding-bottom: 1px;
@@ -45,7 +45,6 @@
     transition: width 0.3s ease-in;
 }
 
-
 #navMenu a:hover::after {
     width: 100%;
 }
@@ -61,14 +60,13 @@
 }
 
 #logo {
-    width: 100px;
-    height: 50px;
-    margin-top: -17px;
+    height: auto;
+    margin: 4px 0 0 10px;
 }
 
 #logo a img {
-    display: flex;
-    width: 100%;
+    width: 80px;
+    height: 50px;
     transition: transform 0.5s ease;
 }
 
@@ -78,8 +76,8 @@
 
 #usuario {
     display: flex;
-    text-align: right;
-    gap: 30px;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 #usuario a {
@@ -89,10 +87,50 @@
 }
 
 #usuario a img {
-    width: 40px;
+    width: 25px;
     height: auto;
 }
 
 #usuario a:hover {
     transform: scale(1.1);
+}
+
+#icon {
+    display: none;
+}
+
+@media all and (max-width:1300px) {
+    #navMenu {
+        gap: 30px;
+    }
+}
+
+@media all and (max-width:1000px) {
+    #navMenu {
+        display: none;
+    }
+
+    #icon {
+        margin: 0 0 10px 10px;
+        font-size: 20px;
+        display: block;
+        color: black;
+    }
+
+    #logo {
+        margin: 0 auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #logo a img {
+        width: 60px;
+        height: 35px;
+    }
+
+    #usuario {
+        justify-content: flex-end;
+    }
 }
