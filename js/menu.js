@@ -1,8 +1,8 @@
 function myFunction(){
-    var x = document.getElementById("myTopnav");
-    if(x.className === "topnav"){
+    var x = document.getElementById("cabecalho");
+    if(x.className === "topHeader"){
         x.className += " responsive";//Abrir e executar o icone do menu
     }else{
-        x.className = "topnav"; //Recolha o menu pelo icone
+        x.className = "topHeader"; //Recolha o menu pelo icone
     }
     }
