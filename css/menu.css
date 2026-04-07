@@ -21,7 +21,7 @@
 
 #navMenu a {
     color: rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     text-decoration: none;
     position: relative;
@@ -121,11 +121,9 @@
     }
 
     #logo {
-        margin: 0 auto;
         width: auto;
         display: flex;
         justify-content: center;
-        margin: 0;
     }
 
     #logo a img {
