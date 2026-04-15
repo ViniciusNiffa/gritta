@@ -74,24 +74,24 @@
     transform: scale(1.1);
 }
 
-#usuario {
+#contaUsuario {
     display: flex;
     gap: 10px;
     margin-right: 10px;
 }
 
-#usuario a {
+#contaUsuario a {
     align-items: center;
     display: flex;
     transition: transform 0.5s ease;
 }
 
-#usuario a img {
+#contaUsuario a img {
     width: 35px;
     height: auto;
 }
 
-#usuario a:hover {
+#contaUsuario a:hover {
     transform: scale(1.1);
 }
 
@@ -158,11 +158,11 @@
         height: 35px;
     }
 
-    #usuario {
+    #contaUsuario {
         justify-content: flex-end;
     }
 
-    #usuario a img {
+    #contaUsuario a img {
         width: 25px;
     }
 }

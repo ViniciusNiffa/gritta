@@ -28,15 +28,73 @@
             <a href="../pages/moletons.html">Moletons</a>
             <a href="../pages/tenis.html">Tenis</a>
         </nav>
-        <div id="usuario">
+        <div id="contaUsuario">
             <a href="../pages/carrinho.html"><img src="../img/menu/carrinho-de-compras.png" alt=""></a>
             <a href="../pages/login.html"><img src="../img/menu/perfil-de-usuario.png" alt=""></a>
         </div>
     </header>
 
     <section id="secCadastro">
-        <h1 id>Cadastro</h1>
+        <article>
+            <h1 id="h1Cad">Cadastro</h1>
+            <form action="{{ url_for('fale_conosco') }}" method="post">
+                <fieldset id="form">
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Sobrenome</label>
+                            <input type="text" id="snome" name="snome" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Usuário</label>
+                            <input type="text" id="usuario" name="usuario" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Data de nascimento</label>
+                            <input type="date" id="data_nasc" name="data_nasc" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* E-mail</label>
+                            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Senha</label>
+                            <input type="password" id="senha" name="senha" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* CPF</label>
+                            <input type="text" id="cpf" name="cpf" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bloco">
+                        <div class="dados">
+                            <label>* Telefone</label>
+                            <input type="tel" id="tel" name="tel" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="botao" name="cadastrar">
+                        Cadastrar
+                    </button>
+                </fieldset>
+            </form>
+        </article>
     </section>
 
 </body>
-</html>
+
+</html> 
