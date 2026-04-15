@@ -8,85 +8,59 @@
     <title>Gr!tta | Cadastro</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <script src="../js/menu.js"></script>
 </head>
 
 <body>
-    <header class="topHeader" id="cabecalho">
-        <div id="logo">
-            <a href="../index.html"><img src="../img/menu/logo.png" alt="logo gritta"></a>
-        </div>
-        <a href="javascript:void(0);" id="icon" onclick="myFunction()">&#9776;</a>
-        <nav id="navMenu">
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/acessorios.html">Acessórios</a>
-            <a href="../pages/calcas.html">Calças</a>
-            <a href="../pages/camisetas.html">Camisetas</a>
-            <a href="../pages/meias.html">Meias</a>
-            <a href="../pages/moletons.html">Moletons</a>
-            <a href="../pages/tenis.html">Tenis</a>
-        </nav>
-        <div id="contaUsuario">
-            <a href="../pages/carrinho.html"><img src="../img/menu/carrinho-de-compras.png" alt=""></a>
-            <a href="../pages/login.html"><img src="../img/menu/perfil-de-usuario.png" alt=""></a>
-        </div>
-    </header>
-
+    <a href="/"><img src="../img/icon_voltar.png" id="voltar" alt="voltar"></a>
     <section id="secCadastro">
-        <article>
+        <article id="artFormulario">
             <h1 id="h1Cad">Cadastro</h1>
             <form action="{{ url_for('fale_conosco') }}" method="post">
-                <fieldset id="form">
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Nome</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Sobrenome</label>
-                            <input type="text" id="snome" name="snome" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Usuário</label>
-                            <input type="text" id="usuario" name="usuario" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Data de nascimento</label>
-                            <input type="date" id="data_nasc" name="data_nasc" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* E-mail</label>
-                            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Senha</label>
-                            <input type="password" id="senha" name="senha" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* CPF</label>
-                            <input type="text" id="cpf" name="cpf" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="bloco">
-                        <div class="dados">
-                            <label>* Telefone</label>
-                            <input type="tel" id="tel" name="tel" required>
-                        </div>
-                    </fieldset>
+                <fieldset class="classForm" id="formulario">  
+                    <div class="dados">
+                        <input type="text" id="nome" name="nome" placeholder="" required>
+                        <label>* Nome</label>
+                    </div>
+
+                    <div class="dados">
+                        <input type="text" id="snome" name="snome" placeholder="" required>
+                        <label>* Sobrenome</label>
+                    </div>
+
+                    <div class="dados">
+                        <input type="text" id="usuario" name="usuario" placeholder="" required>
+                        <label>* Usuário</label>
+                    </div>
+
+                    <div class="dados">
+                        <input type="date" id="data_nasc" name="data_nasc" placeholder="" required>
+                        <label>* Data de nascimento</label>
+                    </div>
+
+                    
+                    <div class="dados">
+                        <input type="text" id="cpf" name="cpf" placeholder="" required>
+                        <label>* CPF</label>
+                    </div>
+                    
+                    <div class="dados">
+                        <input type="tel" id="tel" name="tel" placeholder="" required>
+                        <label>* Telefone</label>
+                    </div>
+
+                    <div class="dados">
+                        <input type="email" id="email" name="email" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        required>
+                        <label>* E-mail</label>
+                    </div>
+
+                    <div class="dados">
+                        <input type="password" id="senha" name="senha" placeholder="" required>
+                        <label>* Senha</label>
+                    </div>
                     <button type="submit" class="botao" name="cadastrar">
                         Cadastrar
                     </button>
@@ -97,4 +71,4 @@
 
 </body>
 
-</html> 
+</html>
