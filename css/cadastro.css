@@ -8,13 +8,11 @@
     display: flex;
     margin: 0 auto;
     border: 0;
-    width: 50%;
+    width: 500px;
     text-align: center;
-    background-color: #055214;
     flex-direction: column;
     padding: 50px 60px;
     border-radius: 15px;
-    box-shadow: 0 0 10px black;
     gap: 50px;
 }
 
@@ -74,11 +72,20 @@
     margin: 10px;
 }
 
-@media all and (max-width: 650px) {
+#artFormulario{
+    width: 100%;
+}
+
+@media all and (max-width: 700px) {
     .dados input {
         width: 77% !important;
         max-width: 100%;
         font-size: 16px;
+    }
+
+    #formulario{
+        width: 89%;
+        padding: 40px 10px;
     }
 
     .dados label {
