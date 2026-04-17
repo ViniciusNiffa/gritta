@@ -29,7 +29,14 @@
     width: 80%;
     height: 50px;
     border-radius: 10px;
-    border: 2px solid ;
+    border: 2px solid black;
+    outline: none;
+}
+
+#login input:focus {
+    border-radius: 9px;
+    border: 2px solid #055214;
+    box-shadow: 0 0 5px #055214;
 }
 
 #login p{
