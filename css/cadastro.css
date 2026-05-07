@@ -11,10 +11,15 @@
     width: 500px;
     text-align: center;
     flex-direction: column;
-    padding: 50px 60px;
+    padding: 20px 60px;
     border-radius: 15px;
-    gap: 50px;
+    gap: 45px;
+    border: 10px solid #027e1b;
+    border-image-source: linear-gradient(to right, #027e1b, #46db64);
+    border-image-slice: 1;
+    background-color: #027e1b1f;
 }
+
 
 .dados {
     display: flex;
@@ -64,6 +69,7 @@
     height: 50px;
     cursor: pointer;
     background-color: #027e1b;
+    border: 2px solid black;
 }
 
 #voltar{
@@ -93,3 +99,59 @@
         font-size: 14px;
     }
 }
+/* Texto gerado por IA */
+/* 1. Registrar a variável de ângulo para animação suave */
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  #formulario {
+      display: flex;
+      margin: 50px auto; /* Aumentei a margem para não cortar o brilho ao girar */
+      width: 500px;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px 60px;
+      border-radius: 15px;
+      gap: 45px;
+      background-color: #0d1117; /* Fundo sólido para cobrir o centro */
+      position: relative; /* Necessário para o efeito */
+      z-index: 0;
+  }
+  
+  /* 2. Criar a borda giratória */
+  #formulario::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      /* Ajuste a espessura da borda aqui (ex: 4px) */
+      inset: -7px; 
+      border-radius: 19px; /* Um pouco maior que o pai para encaixar */
+      
+      /* Cores baseadas no seu verde original */
+      background: conic-gradient(from var(--angle), #027e1b, #46db64, #027e1b);
+      animation: girar 3s linear infinite;
+  }
+  
+  /* 3. Camada interna para manter o fundo e o arredondamento */
+  #formulario::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: white;
+      border-radius: 15px;
+  }
+  
+  /* 4. A animação */
+  @keyframes girar {
+      from { --angle: 0deg; }
+      to { --angle: 360deg; }
+  }
+  
+  /* AJUSTE NO SEU CÓDIGO: Removi o border antigo para não conflitar */
+  #formulario {
+      border: none !important; 
+  }
